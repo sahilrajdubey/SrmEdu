@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SrmEdu</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<script>
+    const adminWelcome = document.getElementById('admin-welcome');
+    const studentWelcome = document.getElementById('student-welcome');
+
+    function showWelcome(role) {
+        if (role === 'admin') {
+            adminWelcome.style.display = 'block';
+            studentWelcome.style.display = 'none';
+        } else if (role === 'student') {
+            studentWelcome.style.display = 'block';
+            adminWelcome.style.display = 'none';
+        }
+    }
+
+    function hideWelcome() {
+        adminWelcome.style.display = 'none';
+        studentWelcome.style.display = 'none';
+    }
+</script>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>SrmEdu</h1>
+        </div>
+    </header>
+    <main>
+</head>
+
+
+     </section>
+    </main>
+    </div>
+    
+ 
+        <section id="container">
+            <div id="overlay" class="overlay">
+                <div class="overlay-content">
+                    <div id="admin-welcome" class="welcome-box" style="display: none;">
+                        <h2>Welcome, Admin!</h2>
+                        <p>Manage your settings and view reports.</p>
+                        <button onclick="hideWelcome()">Close</button>
+                    </div>
+                    <div id="student-welcome" class="welcome-box" style="display: none;">
+                        <h2>Welcome, ]Student!</h2>
+                        <p>Access your courses and track your progress.</p>
+                        <button onclick="hideWelcome()">Close</button>
+                    </div>
+                    <a href="admin.html" target="_main"><button id="admin-button" onclick="showWelcome('admin')">Admin</button></a>
+                    <a href="student.html" target="_main"><button id="student-button" onclick="showWelcome('student')">Student</button></a>
+                </div>
+            </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; SrmEdu.edu.in . All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

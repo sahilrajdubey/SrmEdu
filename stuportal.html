@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Student Portal</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Portal</h1>
+        </header>
+        
+        <div class="sections">
+            <div class="section" id="student-profile">
+                <h2>Student Profile</h2>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Student ID:</strong> 123456</p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                    <p><strong>Major:</strong> Computer Science</p>
+                    <p><strong>Year:</strong> Sophomore</p>
+                </div>
+            </div>
+
+            <div class="section" id="courses">
+                <h2>Courses</h2>
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                </ul>
+            </div>
+
+            <div class="section" id="classes-today">
+                <h2>Classes Today</h2>
+                <ul>
+                    <li>9:00 AM - Mathematics</li>
+                    <li>11:00 AM - Physics</li>
+                    <li>2:00 PM - Chemistry</li>
+                </ul>
+            </div>
+
+            <div class="section" id="todo">
+                <h2>To-Do List</h2>
+                <input type="text" id="todo-input" placeholder="Add a new task" />
+                <button id="add-todo">Add</button>
+                <ul id="todo-list">
+                    <li>
+                        Complete Math Assignment
+                        <button class="remove-btn">Remove</button>
+                    </li>
+                    <li>
+                        Read Physics Chapter 3
+                        <button class="remove-btn">Remove</button>
+                    </li>
+                    <li>
+                        Prepare for Chemistry Quiz
+                        <button class="remove-btn">Remove</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="doubts">
+                <h2>Doubts</h2>
+                <ul>
+                    <li>What is the derivative of x^2?</li>
+                    <li>How does Newton's second law apply to this problem?</li>
+                    <li>What is the best way to memorize the periodic table?</li>
+                </ul>
+            </div>
+
+            <div class="section" id="suggestions">
+                <h2>Suggestions</h2>
+                <input type="text" id="suggestion-input" placeholder="Type your suggestion" />
+                <button id="add-suggestion">Submit</button>
+                <ul id="suggestion-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

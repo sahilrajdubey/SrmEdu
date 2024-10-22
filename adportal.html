@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin-styles.css">
+    <title>Admin Portal</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Portal</h1>
+        </header>
+        <div class="section" id="teacher-profile">
+            <h2>Faculty's Profile</h2>
+            <div id="profile-display">
+                <p>Name: <span id="profile-teacher-name">Mudit</span></p>
+                <p>Subject: <span id="profile-subject">Physics</span></p>
+                <p>Contact: <span id="profile-contact">mudit@srm.edu.in</span></p>
+            </div>
+        </div>
+
+
+        <div class="sections">
+            <div class="section" id="students">
+                <h2>Manage Students</h2>
+                <input type="text" id="student-name" placeholder="Student Name" />
+                <input type="text" id="student-id" placeholder="Student ID" />
+                <button id="add-student">Add Student</button>
+                <ul id="student-list"></ul>
+            </div>
+
+            <div class="section" id="courses">
+                <h2>Manage Courses</h2>
+                <input type="text" id="course-name" placeholder="Course Name" />
+                <button id="add-course">Add Course</button>
+                <ul id="course-list"></ul>
+            </div>
+
+          
+
+          
+
+            <div class="section" id="notes">
+                <h2>Subject Notes Upload</h2>
+                <input type="text" id="note-subject" placeholder="Subject Name" />
+                <input type="file" id="note-file" />
+                <button id="upload-note">Upload Note</button>
+                <ul id="note-list"></ul>
+            </div>
+
+            <div class="section" id="live-sessions">
+                <h2>Live Sessions</h2>
+                <input type="text" id="session-title" placeholder="Session Title" />
+                <input type="datetime-local" id="session-time" />
+                <button id="schedule-session">Schedule Session</button>
+                <ul id="session-list"></ul>
+            </div>
+
+            <div class="section" id="attendance">
+                <h2>Attendance</h2>
+                <input type="text" id="attendance-student" placeholder="Student Name" />
+                <button id="mark-attendance">Mark Attendance</button>
+                <ul id="attendance-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

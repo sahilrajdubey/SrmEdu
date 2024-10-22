@@ -1,0 +1,110 @@
+body {
+    background-color: #000000;
+    background-image: url('bg.jpeg');
+    background-position: 0%;
+    
+    background-size: cover;
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.background {
+    position: absolute;
+    top: 1;
+    left: 1;
+    width: 100%;
+    height: 110%;
+    background-image: url('bg.jpeg'); /* Replace with your image */
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.square-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-box {
+    background-color: #0d345e;
+    color: white;
+    padding: 20px 0;
+    width: 3000px; 
+    border-radius: 10px 10px 0 0;  /* Rounded top corners */
+    text-align: center;
+}
+
+.square-box {
+    background-color: rgb(255, 254, 253);
+    border-radius: 8px 8px 8px 8px; /* Rounded bottom corners */
+    
+    box-shadow: 0 4px 20px rgba(4, 32, 122, 0.705);
+    padding: 2rem;
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height to create a square */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.square-box h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+   border-color:#000000;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
