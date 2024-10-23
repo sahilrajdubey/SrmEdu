@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const passwordInput = document.getElementById('password').value.trim();
 
         if (emailInput === validEmail && passwordInput === validPassword) {
-            // Redirect to the admin portal
-            window.location.href='stuportal.html'; // Change to your portal URL
+            window.Location.href= 'stuportal.html'; // Change to your portal URL
         } else {
             loginMessage.textContent = 'Invalid email or password. Please try again.';
         }
